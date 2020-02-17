@@ -1,0 +1,117 @@
+body {
+    background: #ffffff;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+body,
+form,
+div,
+p,
+a,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+table tr,
+table td {
+    border: none;
+    color: #000000;
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+textarea,
+select {
+    outline: none;
+    font-family: Arial;
+    font-size: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: underline;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-size: 20px;
+    padding: 0 0 10px 0;
+    color: #545454;
+}
+
+.block-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f2f3f7;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: rgb(85, 165, 210);
+    font-size: 18px;
+    border-radius: 40px;
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+        -2px -2px 12px rgba(255, 255, 255, 0.5),
+        inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+        2px 2px 8px rgba(255, 255, 255, 0.15);
+
+
+    // &:focus {
+    //     box-shadow: 1px 2px 8px rgb(85, 165, 210),
+    //         -2px -2px 2px rgba(85, 165, 210, 0.5),
+    //         inset 2px 2px 2px rgba(85, 165, 210, 0.1),
+    //         inset 2px 2px 2px rgba(85, 165, 210, 0.15);
+    // }
+
+
+    &:hover {
+        box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+            inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+            inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+            inset 2px 2px 8px rgba(255, 255, 255, 0.15);
+
+        & .btn__txt {
+            display: inline-block;
+            transform: scale(0.98);
+        }
+    }
+
+    &:focus .btn__txt {
+        opacity: 0.8;
+    }
+
+    &:active {
+        transform: translateY(1px);
+    }
+}
